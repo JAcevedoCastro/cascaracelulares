@@ -1,240 +1,217 @@
-*
-{
-  color: #000000;
-  font-size: 18px;
-  font-weight: 300;
-  box-sizing: border-box;
-  font-family: 'Metrophobic', Arial, serif; font-weight: 400;
+
+                @font-face {
+                        font-family: "rubik1";
+                        src: url("fonts/VinaSans-Regular.ttf");
+                }
+                @font-face {
+                        font-family: "poppins";
+                        src: url(fonts/poppins/Poppins-Light.ttf);
+                }
+                @font-face {
+                        font-family: "poppins1";
+                        src: url(fonts/poppins/Poppins-Regular.ttf);
+                }
+                @font-face {
+                    font-family: "p1";
+                    src: url(fonts/Bitter-VariableFont_wght.ttf);
+                }
+                .map{
+                    margin-top: 25px;
+                    margin-right: 25px;
+                  }
+.head1 {
+    font-size:40px;
+    color:#009900;
+    font-weight:bold;
+}
+.head2 {
+    font-size:17px;
+    margin-left:10px;
+    margin-bottom:15px;
+}
+body {
+    margin: 0 auto;
+    background-position:center;
+    background-size: contain;
 }
 
-body
-{
-  background-color: #001c1c;
-  padding: 20px;
-}
-
-header,
-section,
-footer
-{
-  text-align: center;
-  background-color: #666666;
-  border-radius: 15px;
-  padding:30px;
-}
-
-header,
-footer
-{
-  width: 100%;
-  padding: 40px;
-}
-
-header,
-section,
-footer
-{
-  margin-bottom: 5px;
-}
-
-h1
-{
-  margin: 0;
-}
-
-body{
-  font-family:arial,sans-serif;
-    }
-
-#nave{
-  width:100%;
-  height:120px;
-  background:url(http://cdn.revistagq.com/uploads/images/thumbs/201252/los_100_mejores_hoteles_del_mundo_6554_645x485.jpg);
-  background-size:cover;
-  border-radius: 15px;
-}
-#nave_wrapper{
-  width:1100px;
-  height:80px;
-  background:#377D7A;
-  margin-left:auto;
-  margin-right:auto; 
-  margin-top:0px;
-  opacity:0.7;
-  filter:alpha (opacity=70)/*IE8 earlier */
-}
-
-#nave_wrapper ul li{
-  list-style:none;
-  display:inline;
-  font-weight:bold;
-  padding:50px;
- 
-}
-#nave_wrapper a{
-  color:white;
-  text-decoration:none;
-  padding:10px
-}
-/*seleccion menu*/
-#nave_wrapper ul li:hover{
-  background:#22e5db;
-  transition:all 0.45s;
-  opacity:0.9s;
-  border-radius: 15px;
-  filter:alpha (opacity=90)/*IE8 earlier */ 
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    background-color: #363636;
+    padding:10px 0px 10px 0px;
+    color:white;
+    margin: 0 auto;
+    overflow: hidden;
     
 }
-
-
-
-
-section
-{
-  float: center;
-  width: calc(99% - 100px);
-  margin: 0 50px 50px 50px;
+.menu  a {
+    letter-spacing: 2px;
+    margin-right: 40px;
+    display:flex;
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu .his a {
+    letter-spacing: 2px;
+    margin-right: 40px;
+    display:flex;
+    float: left;
+    color: #000000;
+    text-align: left;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+pre{
+    font-size: 14px;
+}
+.menu .ubi a {
+    letter-spacing: 2px;
+    margin-right: 40px;
+    display:flex;
+    float: left;
+    color: #ed174b;
+    text-align: left;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.menu .menu-log a:hover{
+    color: rgb(255, 255, 255);
 }
 
-footer
-{
-  clear: both;
-  
+.menu h1{
+    font-size: 70px;
+    margin-left: 35px;
+    font-family: 'poppins';
+    
 }
-
-/*Menu de opciones*/
-/* Left column (menu) */
-.left {
-  flex: 15%;
-  padding: 15px 0;
+h1{
+   
+    font-family: 'poppins';
+    
 }
-
-.left h2 {
-  padding-left: 8px;
+h4{
+    
+    font-family: 'poppins';
+    
 }
-
-
-/* Estilo el menú de navegación dentro de la columna izquierda */
-* {
-  box-sizing: border-box;
+.menu-log {
+    display:flex;
+    font-family: "poppins1";
 }
-
-/* Crear un diseño de columna con Flexbox */
-.row {
-  display: flex;
+.menu  a.active{
+    border-bottom: 3px solid black;
+    display: inline-block;
 }
-
-/* Columna izquierda (menú) */
-.left {
-  flex: 25%;
-  padding: 1px 0;
+footer {
+    width: 100%;
+    bottom: -556px;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    padding-top:0px;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
 }
-
-.left h2 {
-  padding-left: 8px;
+.body_sec {
+    margin-left:20px;
 }
+.pie-pagina{
+    background-color: #000000;
+    width: 100%;
 
-/* Columna derecha (contenido de la página) */
-.center {
-  flex: 5%;
-  padding: 1px;
-  }
-
-.right {
-  flex: 75%;
-  padding: 1px;
-  }
-
-/* color marco del buscador*/
-#mySearch {
-  width: 100%;
-  font-size: 18px;
-  padding: 11px;
-  color: black;
-  border:1px solid #ddd;
 }
-
-/* Estilo el menú de navegación dentro de la columna izquierda */
-#myMenu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+p{
+    font-size: 24px;
 }
-/* color texto */
-#myMenu li a {
-  background-color: #ddd;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  display: block
+.pie-pagina .grupo-1{
+width: 100%;
+max-width: 1200px;
+margin: auto;
+display:grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap:50px;
+padding: 45px 0px;
 }
-/* color selector Menu seccion */
-#myMenu li a:hover {
-  background-color: #eee;
+.pie-pagina .grupo-1 .box figure{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
-
-
-
-/*tamaño caja mensaje*/
-.form__fieldset{
-  max-width: 1300px;
- }
-/*titulo*/
-.form__legend {
-  font-weight: bold;
-  font-size: 18px;
-  color: black;
+.pie-pagina .grupo-1 .box figure img{
+width: 70px;
 }
-/*igualar texto y cajas*/
-.form__row {
-  margin-bottom: 0.2em;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  
+.pie-pagina .grupo-1 .box h2{
+color: #fff;
+margin-bottom: 25px;
+font-size: 20px;
+font-family: "poppins1";
+
 }
-/*cajas*/
-.form__label {
-  display: block;
-  font-weight: bold;
-  font-size: 18px;
-  color: black;
-  flex: 1 0 120px;
-  max-width: 400px;
+.pie-pagina .grupo-1 .box p{
+color: #efefef;
+font-size: 15px;
+margin-bottom: 10px;
+font-family: "poppins";
 }
-
-/*tamaño= cajas*/
-.form__textinput, .form__textarea {  
-  flex: 1 0 300px;
-  max-width: 500px;
-  box-sizing: border-box;
-  
-  }
-
-/*Borde cajas*/
-.form__textinput:focus:invalid,
-.form__textarea:focus:invalid {
-    border: 2px solid red;
-  font-size: 18px;
-  color: black;
+.pie-pagina .grupo-1 .red-social a{
+display: inline-block;
+text-decoration: none;
+width: 45px;
+height: 45px;
+line-height: 45px;
+color: #fff;
+margin-right: 10px;
+background-color: #11a4ed;
+text-align: center;
+transition: all 300ms ease;
 }
-/*Borde cajas ya contestadas*/
- .form__textinput:valid ,
- .form__textinput:focus:valid ,
-.form__textarea:valid ,
-.form__textarea:focus:valid  {
-  border: 2px solid green;
-  font-size: 15px;
-  color: black;
+.pie-pagina .grupo-1 .red-social1 a{
+display: inline-block;
+text-decoration: none;
+width: 45px;
+height: 45px;
+line-height: 45px;
+color: #fff;
+margin-right: 10px;
+background-color: #11a4ed;
+text-align: center;
+transition: all 300ms ease;
 }
-
-.form__textarea {
-  height: 90px;
-  
- }
-
-
-
-
-
+.pie-pagina .grupo-1 .red-social a:hover{
+color: rgb(0, 0, 0);
+}
+.pie-pagina .grupo-1 .red-social1 a:hover{
+color: rgb(0, 0, 0);
+}
+.pie-pagina .grupo-2{
+background-color: #ffffff;
+padding: 5px 10px;
+text-align: center;
+color: #fff;
+}
+.pie-pagina .grupo-2 small{
+font-size: 10px;
+font-family: "poppins";
+color: #000;
+}
+@media screen and (max-width:800px){
+.pie-pagina .grupo-1{
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap:30px;
+    padding: 35px 0px;
+}
+}

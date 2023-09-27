@@ -1,0 +1,49 @@
+
+
+
+
+  
+   .btn-primary {
+    border: 0px none;
+    border-radius: 5px;
+    background: #11a4ed;
+    font-family: Arial;
+    font-size:20px;
+    color:white;
+  }
+  #about-box{
+    color:white;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: #11a4ed;
+    border: 1px solid gray;
+    border-radius: 0px;
+    padding: 0px;
+    margin: 1px;
+  }
+  #about-content-box {
+    background-color: white;
+    border: 0px none;
+    border-radius: 0px;
+    padding: 5px;
+    margin: 1px;
+  }
+  
+  .logo {
+    font-size: 40px;
+    color: #11a4ed;
+    text-align: center;
+  }
+  
+  #about-picture {
+    background:rgb(183, 179, 171);
+    margin:10px;
+    border: 0px solid red;
+  }
+  
+ 
+  
+ 
+
+ 
+  
