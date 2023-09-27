@@ -1,2 +1,2 @@
-# cascaraplaystation
-Mi negocio franquicia OXXO
+# cascaracelulares
+Mi negocio franquicia zonaphone
