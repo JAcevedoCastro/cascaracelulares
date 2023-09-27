@@ -33,12 +33,12 @@
 
    
      <div class="row">
-   <div class="left" style="background-color:#60A3D9;">
+   <div class="left" style="background-color:#bbb;">
      <h2>Menu</h2>
      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
      <ul id="myMenu">
        <li><a href="formularioc.html" class="active" >Formulario Clientes</a></li>
-       <li><a href="formularioe.html">Formulario Empleado</a></li>
+       <li><a href="formularioe.html" >Formulario Empleado</a></li>
        <li><a href="formulariop.html">Formulario Proveedor</a></li>
        <li><a href="formulariopr.html">Formulario Producto</a></li>
        <li><a href="formulariov.html">Formulario Venta</a></li>
@@ -52,9 +52,9 @@
    
       <!-- -->
       
-   <div class="right" style="background-color:#BFD7ED;">
+   <div class="right" style="background-color:#ffffff;">
    <!-- // -->
-     <div class="center" style="background-color:#0074B7;">
+     <div class="center" style="background-color:#303030;">
          <h2><center>FORMULARIO CLIENTES</center></h2>
        </div>
      
@@ -63,8 +63,7 @@
        <div class="contact_form">
 
 		<div class="formulario">			
-            <h1>CLIENTES</h1>
-
+            <center><h2>CLIENTES</h2></center>
 
 					<form action="submeter-formulario.php" method="post">				
 
@@ -77,22 +76,22 @@
 								</p>
 							
 								<p>
-									<label for="Nombre" class="colocar_Nombre">Nombre
+									<label for="ID" class="colocar_ID">Nombre
 										<span class="obligatorio">*</span>
 									</label>
-										<input type="Nombre" name="introducir_Nombre" id="Nombre" required="obligatorio" placeholder="Escribe tu Nombre">
+										<input type="ID" name="introducir_ID" id="ID" required="obligatorio" placeholder="Escribe tu Nombre">
 								</p>
 						
 								<p>
 									<label for="telefone" class="colocar_telefono">Apellido Paterno
 									</label>
-										<input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu Apellido Paterno">
+										<input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu Apellido paterno">
 								</p>		
 							
 								<p>
-									<label for="website" class="colocar_website">Apellido Materno
+									<label for="website" class="colocar_website">Apellido materno
 									</label>
-										<input type="url" name="introducir_website" id="website" placeholder="Escribe tu Apellido Materno">
+										<input type="url" name="introducir_website" id="website" placeholder="Escribe tu Apellido materno">
 								</p>		
 							
 								<p>
@@ -122,7 +121,7 @@
 							
 							  								
 							
-								<button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+								<input type="submit" value="ENVIAR DATOS" class="sent-data">
 
 								
 					</form>

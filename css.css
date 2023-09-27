@@ -1,130 +1,106 @@
-/* Importación de fuentes de google fonts */ 
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
-
-
-
-
-.contact_form{	
-	width: 460px; 
-  height: auto;
-  margin: 80px auto;
-	border-radius: 10px;  
-	padding-top: 30px;
-	padding-bottom: 20px;  
-  background-color: #fbfbfb; 
-  padding-left: 30px; 
+*
+{
+	transition: .2s all;
+	font-family: 'Lato';
 }
 
 
-input{
-	background-color: #fbfbfb; 
-	width: 408px; 
-	height: 40px; 
-	border-radius: 5px;  
-	border-style: solid; 
-	border-width: 1px; 
-	border-color: #0074B7; 
-	margin-top: 10px;  
+
+
+.formulario
+{
+	margin-top: 20px;
+	width: 900px;
+	max-width: 90%;
+	margin:0 auto;
+	padding: 1em;
+}
+
+.formulario input, textarea
+{
+	display: block;
+	width: 500px;
+	max-width: 90%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border:none;
+	border-bottom: 0.5px solid rgba(0,0,0,.8);
+	padding: 0.5em;
+	color: rgba(0,0,0,.7);
+
+}
+
+.formulario input:focus, textarea:focus
+{
+	outline: none;
 	padding-left: 10px;
-  margin-bottom: 20px; 
 }
 
-
-textarea{
-  background-color: #fbfbfb; 
-	width: 405px; 
-	height: 150px; 
-	border-radius: 5px;  
-	border-style: solid; 
-	border-width: 1px; 
-	border-color: #0074B7; 
-	margin-top: 10px;  
-	padding-left: 10px;
-  margin-bottom: 20px; 
-  padding-top: 15px; 
+.formulario .sent-data
+{
+	padding: 1em;
+	border:1px solid rgba(17, 131, 207, 0.8);
+	background: none;
+	color:rgba(17, 131, 207, 0.8);
+	cursor: pointer;
 }
 
-
-label{
-  display: block; 
-	float: center; 	
+.formulario .sent-data:hover
+{
+	padding-left: 20px;
+	opacity: .8;
+	border-color: #2f323a;
+	color:#2f323a;
+	border-left: 2px solid #2f323a;
 }
 
+.link
+{
+	text-decoration: none;
+	padding: 1em;
+	border:none;
+	background: rgba(17, 131, 207, 0.8);
+	color:white;
+	cursor: pointer;
+	margin-top:100px;
+}
 
-button{
-	height: 45px; 
-	padding-left: 5px;
-	padding-right: 5px; 	
-	margin-bottom: 20px; 
-	margin-top: 10px; 	
+.formulario form
+{
+	margin: 0 auto;
+	width:40%;
+}
+
+.formulario label
+{
+	position: relative;
+	text-transform: uppercase;	
+	color:rgba(17, 131, 207, 0.8);;
+}
+
+label::after
+{
+	position: absolute;
+	content:"";
+	background: rgba(17, 131, 207, 0.8);
+	border:1px solid rgba(17, 131, 207, 0.8);
+	width:20px;
+	bottom: -3px;
+	left:0;
+}
+ 
+
+.title-main
+{
+	text-align: center;
+	color:rgba(17, 131, 207, 0.8);
 	text-transform: uppercase;
-	background-color: #0074B7; 
-	border-color: #0074B7; 
-	border-style: solid; 
-	border-radius: 10px;	
-	width: 420px;   
-  cursor: pointer;
+	position: relative;
 }
 
-
-button p{
-	color: #fff; 
+.title-back
+{
+	margin-top: 100px;
 }
-
-
-span{
-	color: #0074B7; 
-}
-
-
-.aviso{
-	font-size: 13px;  
-	color: #0e0e0e;  
-}
-
-
-h1{
-	font-size: 39px;  
-	text-align: letf; 
-	padding-bottom: 20px; 
-	color: #0074B7;
-}
-
-
-h3{
-	font-size: 16px; 
-	padding-bottom: 30px;
-	color: #0e0e0e;   
-}
-
-
-p{
-	font-size: 14px; 
-	color: #0e0e0e; 
-}
-
-
-::-webkit-input-placeholder {
- color: #a8a8a8;
-}
-
-
-::-webkit-textarea-placeholder {
- color: #a8a8a8;
-}
-
-
-.formulario input:focus{
-	outline:0;
-	border: 1px solid skyblue;
-}
-
-
-.formulario textarea:focus{
-	outline:0;
-	border: 1px solid skyblue;
-}
-
-
-/* creado por javiniguez.com, Julio 2019 */
